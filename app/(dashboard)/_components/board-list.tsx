@@ -1,5 +1,6 @@
 "use client";
 
+import { EmptyFavourites } from "./empty-favourites";
 import { EmptySearch } from "./empty-search";
 
 type BoardListProps = {
@@ -18,7 +19,7 @@ export const BoardList = ({ orgId, query }: BoardListProps) => {
   }
 
   if (!data.length && query.favourites) {
-    return <div>No favourites.</div>;
+    return <EmptyFavourites />;
   }
 
   if (!data?.length) {
