@@ -2,6 +2,7 @@
 
 import { useOrganization } from "@clerk/nextjs";
 import Image from "next/image";
+import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
@@ -17,7 +18,12 @@ export const EmptyBoards = () => {
     mutate({
       orgId: organization.id,
       title: "Untitled",
-    });
+    })
+      .then((id) => {
+        toast.success("Board created.");
+        // TODO: Redirect to board/{id}
+      })
+      .catch(() => toast.error("Failed to create board."));
   };
   return (
     <div className="h-full flex flex-col items-center justify-center">
