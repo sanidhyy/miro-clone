@@ -1,5 +1,6 @@
 "use client";
 
+import { EmptyBoards } from "./empty-boards";
 import { EmptyFavourites } from "./empty-favourites";
 import { EmptySearch } from "./empty-search";
 
@@ -23,7 +24,7 @@ export const BoardList = ({ orgId, query }: BoardListProps) => {
   }
 
   if (!data?.length) {
-    return <div>No boards at all.</div>;
+    return <EmptyBoards />;
   }
 
   return <div className="">BoardList</div>;
