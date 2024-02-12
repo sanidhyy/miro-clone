@@ -5,6 +5,8 @@ import { formatDistanceToNow } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Skeleton } from "@/components/ui/skeleton";
+
 import { Footer } from "./footer";
 import { Overlay } from "./overlay";
 
@@ -54,5 +56,13 @@ export const BoardCard = ({
         />
       </div>
     </Link>
+  );
+};
+
+BoardCard.Skeleton = function BoardCardSkeleton() {
+  return (
+    <div className="aspect-[100/127] rounded-lg flex overflow-hidden">
+      <Skeleton className="h-full w-full" />
+    </div>
   );
 };
