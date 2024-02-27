@@ -4,6 +4,8 @@ import type { DropdownMenuContentProps } from "@radix-ui/react-dropdown-menu";
 import { Link2, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 
+import { ConfirmModal } from "@/components/confirm-modal";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -58,10 +60,20 @@ export const Actions = ({
           Copy board link
         </DropdownMenuItem>
 
-        <DropdownMenuItem onClick={onDelete} className="p-3 cursor-pointer">
-          <Trash2 className="h-4 w-4 mr-2" />
-          Delete
-        </DropdownMenuItem>
+        <ConfirmModal
+          header="Delete board?"
+          description="This will delete the board and all its contents."
+          disabled={pending}
+          onConfirm={onDelete}
+        >
+          <Button
+            variant="ghost"
+            className="p-3 cursor-pointer text-sm w-full justify-start font-normal"
+          >
+            <Trash2 className="h-4 w-4 mr-2" />
+            Delete
+          </Button>
+        </ConfirmModal>
       </DropdownMenuContent>
     </DropdownMenu>
   );
