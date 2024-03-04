@@ -9,6 +9,7 @@ declare global {
 
       // liveblocks api keys
       NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY: string;
+      NEXT_PUBLIC_LIVEBLOCKS_SECRET_KEY: string;
     }
   }
 }
