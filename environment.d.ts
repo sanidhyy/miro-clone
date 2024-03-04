@@ -6,6 +6,9 @@ declare global {
     interface ProcessEnv {
       // convex public url
       NEXT_PUBLIC_CONVEX_URL: string;
+
+      // liveblocks api keys
+      NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY: string;
     }
   }
 }
