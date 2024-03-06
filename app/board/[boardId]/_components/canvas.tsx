@@ -6,6 +6,7 @@ import { CanvasMode, type CanvasState } from "@/types/canvas";
 
 import { useCanRedo, useCanUndo, useHistory } from "@/liveblocks.config";
 
+import { CursorsPresence } from "./cursors-presence";
 import { Info } from "./info";
 import { Participants } from "./participants";
 import { Toolbar } from "./toolbar";
@@ -35,6 +36,12 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         undo={history.undo}
         redo={history.redo}
       />
+
+      <svg className="h-[100vh] w-[100vw]">
+        <g>
+          <CursorsPresence />
+        </g>
+      </svg>
     </main>
   );
 };
