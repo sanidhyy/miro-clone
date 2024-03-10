@@ -6,6 +6,7 @@ import { useStorage } from "@/liveblocks.config";
 import { LayerType } from "@/types/canvas";
 
 import { Ellipse } from "./eliipse";
+import { Note } from "./note";
 import { Rectangle } from "./rectangle";
 import { Text } from "./text";
 
@@ -22,6 +23,15 @@ export const LayerPreview = memo(
     if (!layer) return null;
 
     switch (layer.type) {
+      case LayerType.Note:
+        return (
+          <Note
+            id={id}
+            layer={layer}
+            onPointerDown={onLayerPointerDown}
+            selectionColor={selectionColor}
+          />
+        );
       case LayerType.Text:
         return (
           <Text
