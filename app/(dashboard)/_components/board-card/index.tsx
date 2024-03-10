@@ -44,10 +44,10 @@ export const BoardCard = ({
   });
 
   const { mutate: onFavourite, pending: pendingFavourite } = useApiMutation(
-    api.board.favourite
+    api.board.favourite,
   );
   const { mutate: onUnfavourite, pending: pendingUnfavourite } = useApiMutation(
-    api.board.unfavourite
+    api.board.unfavourite,
   );
 
   const toggleFavourite = () => {
@@ -55,7 +55,7 @@ export const BoardCard = ({
       onUnfavourite({ id }).catch(() => toast.error("Failed to unfavourite."));
     else
       onFavourite({ id, orgId }).catch(() =>
-        toast.error("Failed to favourite.")
+        toast.error("Failed to favourite."),
       );
   };
 

@@ -77,7 +77,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         | LayerType.Rectangle
         | LayerType.Text
         | LayerType.Note,
-      position: Point
+      position: Point,
     ) => {
       const liveLayers = storage.get("layers");
 
@@ -100,7 +100,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
       setMyPresence({ selection: [layerId] }, { addToHistory: true });
       setCanvasState({ mode: CanvasMode.None });
     },
-    [lastUsedColor]
+    [lastUsedColor],
   );
 
   const translateSelectedLayers = useMutation(
@@ -126,7 +126,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
 
       setCanvasState({ mode: CanvasMode.Translating, current: point });
     },
-    [canvasState]
+    [canvasState],
   );
 
   const unselectLayers = useMutation(({ self, setMyPresence }) => {
@@ -148,12 +148,12 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         layerIds,
         layers,
         origin,
-        current
+        current,
       );
 
       setMyPresence({ selection: ids });
     },
-    [layerIds]
+    [layerIds],
   );
 
   const startMultiSelection = useCallback((current: Point, origin: Point) => {
@@ -190,7 +190,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
             : [...pencilDraft, [point.x, point.y, e.pressure]],
       });
     },
-    [canvasState.mode]
+    [canvasState.mode],
   );
 
   const insertPath = useMutation(
@@ -210,7 +210,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
       const id = nanoid();
       liveLayers.set(
         id,
-        new LiveObject(penPointsToPathLayer(pencilDraft, lastUsedColor))
+        new LiveObject(penPointsToPathLayer(pencilDraft, lastUsedColor)),
       );
 
       const liveLayerIds = storage.get("layerIds");
@@ -219,7 +219,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
       setMyPresence({ pencilDraft: null });
       setCanvasState({ mode: CanvasMode.Pencil });
     },
-    [lastUsedColor]
+    [lastUsedColor],
   );
 
   const startDrawing = useMutation(
@@ -229,7 +229,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         penColor: lastUsedColor,
       });
     },
-    [lastUsedColor]
+    [lastUsedColor],
   );
 
   const resizeSelectedLayer = useMutation(
@@ -239,7 +239,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
       const bounds = resizeBounds(
         canvasState.initialBounds,
         canvasState.corner,
-        point
+        point,
       );
 
       const liveLayers = storage.get("layers");
@@ -247,7 +247,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
 
       if (layer) layer.update(bounds);
     },
-    [canvasState]
+    [canvasState],
   );
 
   const onResizeHandlePointerDown = useCallback(
@@ -260,7 +260,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         corner,
       });
     },
-    [history]
+    [history],
   );
 
   const onWheel = useCallback((e: React.WheelEvent) => {
@@ -298,7 +298,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
       resizeSelectedLayer,
       camera,
       translateSelectedLayers,
-    ]
+    ],
   );
 
   const onPointerLeave = useMutation(({ setMyPresence }) => {
@@ -320,7 +320,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
 
       setCanvasState({ origin: point, mode: CanvasMode.Pressing });
     },
-    [camera, canvasState.mode, setCanvasState, startDrawing]
+    [camera, canvasState.mode, setCanvasState, startDrawing],
   );
 
   const onPointerUp = useMutation(
@@ -355,7 +355,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
       insertLayer,
       unselectLayers,
       insertPath,
-    ]
+    ],
   );
 
   const selections = useOthersMapped((other) => other.presence.selection);
@@ -379,7 +379,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
 
       setCanvasState({ mode: CanvasMode.Translating, current: point });
     },
-    [setCanvasState, camera, history, canvasState.mode]
+    [setCanvasState, camera, history, canvasState.mode],
   );
 
   const layerIdsToColorSelection = useMemo(() => {

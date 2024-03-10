@@ -20,6 +20,6 @@ export const useDeleteLayers = () => {
 
       setMyPresence({ selection: [] }, { addToHistory: true });
     },
-    [selection]
+    [selection],
   );
 };

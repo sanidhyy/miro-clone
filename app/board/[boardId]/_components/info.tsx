@@ -47,7 +47,7 @@ export const Info = ({ boardId }: InfoProps) => {
             <span
               className={cn(
                 "font-semibold text-xl ml-2 text-black",
-                font.className
+                font.className,
               )}
             >
               Miro

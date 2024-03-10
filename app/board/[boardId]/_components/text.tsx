@@ -62,7 +62,7 @@ export const Text = ({
         onChange={handleContentChange}
         className={cn(
           "h-full w-full flex items-center justify-center text-center drop-shadow-md outline-none",
-          font.className
+          font.className,
         )}
         style={{
           fontSize: calculateFontSize(width, height),

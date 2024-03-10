@@ -35,11 +35,11 @@ export const SelectionTools = memo(
         for (let i = indices.length - 1; i >= 0; i--) {
           liveLayerIds.move(
             indices[i],
-            arr.length - 1 - (indices.length - 1 - i)
+            arr.length - 1 - (indices.length - 1 - i),
           );
         }
       },
-      [selection]
+      [selection],
     );
 
     const moveToBack = useMutation(
@@ -57,7 +57,7 @@ export const SelectionTools = memo(
           liveLayerIds.move(indices[i], i);
         }
       },
-      [selection]
+      [selection],
     );
 
     const setFill = useMutation(
@@ -69,7 +69,7 @@ export const SelectionTools = memo(
           liveLayers.get(id)?.set("fill", fill);
         });
       },
-      [selection, setLastUsedColor]
+      [selection, setLastUsedColor],
     );
 
     const deleteLayers = useDeleteLayers();
@@ -115,7 +115,7 @@ export const SelectionTools = memo(
         </div>
       </div>
     );
-  }
+  },
 );
 
 SelectionTools.displayName = "SelectionTools";

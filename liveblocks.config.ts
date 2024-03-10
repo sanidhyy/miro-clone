@@ -145,7 +145,7 @@ export const {
     // useRoomInfo
   },
 } = createRoomContext<Presence, Storage, UserMeta, RoomEvent, ThreadMetadata>(
-  client
+  client,
 );
 
 // Project-level hooks, use inside `LiveblocksProvider`

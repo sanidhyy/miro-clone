@@ -18,7 +18,7 @@ export const get = query({
       const favouritedBoards = await ctx.db
         .query("userFavourites")
         .withIndex("by_user_org", (q) =>
-          q.eq("userId", identity.subject).eq("orgId", args.orgId)
+          q.eq("userId", identity.subject).eq("orgId", args.orgId),
         )
         .order("desc")
         .collect();
@@ -39,7 +39,7 @@ export const get = query({
       boards = await ctx.db
         .query("boards")
         .withSearchIndex("search_title", (q) =>
-          q.search("title", title).eq("orgId", args.orgId)
+          q.search("title", title).eq("orgId", args.orgId),
         )
         .collect();
     } else {
@@ -54,7 +54,7 @@ export const get = query({
       return ctx.db
         .query("userFavourites")
         .withIndex("by_user_board", (q) =>
-          q.eq("userId", identity.subject).eq("boardId", board._id)
+          q.eq("userId", identity.subject).eq("boardId", board._id),
         )
         .unique()
         .then((favourite) => {
