@@ -7,6 +7,7 @@ import { LayerType } from "@/types/canvas";
 
 import { Ellipse } from "./eliipse";
 import { Rectangle } from "./rectangle";
+import { Text } from "./text";
 
 type LayerPreviewProps = {
   id: string;
@@ -21,6 +22,15 @@ export const LayerPreview = memo(
     if (!layer) return null;
 
     switch (layer.type) {
+      case LayerType.Text:
+        return (
+          <Text
+            id={id}
+            layer={layer}
+            onPointerDown={onLayerPointerDown}
+            selectionColor={selectionColor}
+          />
+        );
       case LayerType.Ellipse:
         return (
           <Ellipse
