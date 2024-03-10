@@ -28,6 +28,7 @@
     "nanoid": "^5.0.6",
     "next": "14.1.0",
     "next-themes": "^0.2.1",
+    "perfect-freehand": "^1.2.2",
     "query-string": "^8.2.0",
     "react": "^18",
     "react-contenteditable": "^3.3.7",
