@@ -230,7 +230,8 @@ NEXT_PUBLIC_LIVEBLOCKS_SECRET_KEY=sk_dev_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 - Save the changes to the `.env.local` file.
 
-9. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
+9. Install Project Dependencies using `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
