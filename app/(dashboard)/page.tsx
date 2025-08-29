@@ -1,6 +1,4 @@
-"use client";
-
-import { useOrganization } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs";
 
 import { BoardList } from "./_components/board-list";
 import { EmptyOrg } from "./_components/empty-org";
@@ -13,15 +11,11 @@ type DashboardPageProps = {
 };
 
 const DashboardPage = ({ searchParams }: DashboardPageProps) => {
-  const { organization } = useOrganization();
+  const { orgId } = auth();
 
   return (
     <div className="flex-1 h-[calc(100%-80px)] p-6">
-      {!organization ? (
-        <EmptyOrg />
-      ) : (
-        <BoardList orgId={organization.id} query={searchParams} />
-      )}
+      {!orgId ? <EmptyOrg /> : <BoardList orgId={orgId} query={searchParams} />}
     </div>
   );
 };

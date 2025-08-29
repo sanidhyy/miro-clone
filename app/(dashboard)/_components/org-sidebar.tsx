@@ -48,6 +48,9 @@ export const OrgSidebar = () => {
               justifyContent: "space-between",
               backgroundColor: "white",
             },
+            organizationSwitcherPopoverActionButton__createOrganization: {
+              display: "none",
+            },
           },
         }}
       />
