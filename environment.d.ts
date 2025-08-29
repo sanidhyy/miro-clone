@@ -7,9 +7,12 @@ declare global {
       // convex public url
       NEXT_PUBLIC_CONVEX_URL: string;
 
+      // clerk default org id
+      CLERK_DEFAULT_ORGANIZATION_ID: string;
+
       // liveblocks api keys
       NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY: string;
-      NEXT_PUBLIC_LIVEBLOCKS_SECRET_KEY: string;
+      LIVEBLOCKS_SECRET_KEY: string;
     }
   }
 }
