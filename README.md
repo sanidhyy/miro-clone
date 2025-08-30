@@ -169,6 +169,9 @@ NEXT_PUBLIC_CONVEX_URL=https://convex-app-name.convex.cloud
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 CLERK_SECRET_KEY=sk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+# clerk default org id
+CLERK_DEFAULT_ORGANIZATION_ID=org_xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 # liveblocks api keys
 NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=pk_dev_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 LIVEBLOCKS_SECRET_KEY=sk_dev_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -207,6 +210,11 @@ LIVEBLOCKS_SECRET_KEY=sk_dev_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 #### d. Update `.env.local`:
 
 - Replace the `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` variables in the `.env.local` file with the keys obtained from Clerk.
+
+#### e. Get Default Organization Id
+
+- Go to Clerk Dashboard > Settings > Organizations and Enable Organizations.
+- Create a new organization, Replace the `CLERK_DEFAULT_ORGANIZATION_ID` with the newly created organization id.
 
 ### 7. Liveblocks API Keys:
 
