@@ -53,6 +53,8 @@ export const OrgSidebar = () => {
             },
           },
         }}
+        afterLeaveOrganizationUrl="/"
+        afterSelectOrganizationUrl="/"
       />
 
       <div className="space-y-1 w-full">

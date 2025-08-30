@@ -1,19 +1,19 @@
 "use client";
 
-// import { CreateOrganization } from "@clerk/nextjs";
-import { Loader2Icon } from "lucide-react";
+import { useOrganizationList } from "@clerk/nextjs";
+import { Loader2Icon, PlusIcon } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
-import { useTransition } from "react";
 import { addUserToOrg } from "@/actions/org";
-import { useOrganizationList } from "@clerk/nextjs";
-// import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export const EmptyOrg = () => {
   const { isLoaded, setActive } = useOrganizationList();
   const [isPending, startTransition] = useTransition();
+  const router = useRouter();
 
   const handleCreateOrganization = () => {
     startTransition(async () => {
@@ -25,7 +25,7 @@ export const EmptyOrg = () => {
       }
 
       setActive?.({ organization: data.id });
-      window.location.reload();
+      router.refresh();
     });
   };
 
@@ -39,27 +39,18 @@ export const EmptyOrg = () => {
       </p>
 
       <div className="mt-6">
-        {/* For production instance, don't use in development due to clerk's 50 organization limit. */}
-        {/* <Dialog>
-          <DialogTrigger asChild>
-            <Button size="lg">Create organization</Button>
-          </DialogTrigger>
-
-          <DialogContent className="p-0 bg-transparent border-none max-w-[480px]">
-            <CreateOrganization />
-          </DialogContent>
-        </Dialog> */}
-
         <Button
           size="lg"
           onClick={handleCreateOrganization}
           disabled={isPending || !isLoaded}
         >
-          {isPending && (
+          {isPending ? (
             <Loader2Icon
               className="size-4 animate-spin mr-2"
               strokeWidth={2.5}
             />
+          ) : (
+            <PlusIcon className="size-4 mr-1.5" strokeWidth={2.5} />
           )}
           Create organization
         </Button>
