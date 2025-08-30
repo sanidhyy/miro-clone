@@ -10,7 +10,7 @@ import { InviteButton } from "./invite-button";
 import { SearchInput } from "./search-input";
 
 export const Navbar = () => {
-  const { organization } = useOrganization();
+  const { organization, membership } = useOrganization();
 
   return (
     <div className="flex items-center gap-x-4 p-5">
@@ -38,12 +38,15 @@ export const Navbar = () => {
                 justifyContent: "space-between",
                 backgroundColor: "white",
               },
+              organizationSwitcherPopoverActionButton__createOrganization: {
+                display: "none",
+              },
             },
           }}
         />
       </div>
 
-      {organization && <InviteButton />}
+      {!!organization && membership?.role === "org:admin" && <InviteButton />}
       <UserButton />
     </div>
   );

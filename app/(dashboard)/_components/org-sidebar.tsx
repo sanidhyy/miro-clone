@@ -48,8 +48,13 @@ export const OrgSidebar = () => {
               justifyContent: "space-between",
               backgroundColor: "white",
             },
+            organizationSwitcherPopoverActionButton__createOrganization: {
+              display: "none",
+            },
           },
         }}
+        afterLeaveOrganizationUrl="/"
+        afterSelectOrganizationUrl="/"
       />
 
       <div className="space-y-1 w-full">
