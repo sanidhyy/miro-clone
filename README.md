@@ -43,6 +43,8 @@
 
 Here is the folder structure of this app.
 
+<!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 miro-clone/
   |- app/
@@ -143,6 +145,8 @@ miro-clone/
   |- tailwind.config.ts
   |- tsconfig.json
 ```
+
+<!--- FOLDER_STRUCTURE_END --->
 
 <br />
 
@@ -268,6 +272,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and dependencies that are used in Miro Clone.
 
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
+<!--- DEPENDENCIES_START --->
 - [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^4.29.7
 - [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^1.10.1
 - [@liveblocks/node](https://www.npmjs.com/package/@liveblocks/node): ^1.10.1
@@ -297,6 +302,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
 - [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^2.14.0
 - [zustand](https://www.npmjs.com/package/zustand): ^4.5.1
+<!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
 
