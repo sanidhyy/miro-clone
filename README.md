@@ -44,49 +44,14 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 miro-clone/
+  |- actions/
+    |-- org.ts
   |- app/
     |-- (dashboard)/
-        |--- _components/
-            |---- board-card/
-            |---- sidebar/
-            |---- board-list.tsx
-            |---- empty-boards.tsx
-            |---- empty-favourites.tsx
-            |---- empty-org.tsx
-            |---- empty-search.tsx
-            |---- invite-button.tsx
-            |---- navbar.tsx
-            |---- new-board-button.tsx
-            |---- org-sidebar.tsx
-            |---- search-input.tsx
-        |--- layout.tsx
-        |--- page.tsx
-    |-- api/liveblocks-auth/
-        |--- route.ts
-    |-- board/[boardId]/
-        |--- _components/
-            |---- canvas.tsx
-            |---- color-picker.tsx
-            |---- cursor.tsx
-            |---- cursors-presence.tsx
-            |---- ellipse.tsx
-            |---- info.tsx
-            |---- layer-preview.tsx
-            |---- loading.tsx
-            |---- note.tsx
-            |---- participants.tsx
-            |---- path.tsx
-            |---- rectangle.tsx
-            |---- selection-box.tsx
-            |---- selection-tools.tsx
-            |---- text.tsx
-            |---- tool-button.tsx
-            |---- toolbar.tsx
-            |---- user-avatar.tsx
-        |--- page.tsx
+    |-- api/
+    |-- board/
     |-- apple-icon.png
     |-- favicon.ico
     |-- globals.css
@@ -111,41 +76,36 @@ miro-clone/
     |-- schema.ts
     |-- tsconfig.json
   |- hooks/
-    |-- use-api-mutation.tsx
-    |-- use-disable-scroll-bounce.tsx
-    |-- use-selection-bounds.tsx
+    |-- use-api-mutation.ts
+    |-- use-delete-layers.ts
+    |-- use-disable-scroll-bounce.ts
+    |-- use-selection-bounds.ts
   |- lib/
     |-- utils.ts
   |- providers/
     |-- convex-client-provider.tsx
     |-- modal-provider.tsx
   |- public/
-    |-- placeholders/
-    |-- elements.svg
-    |-- empty-boards.svg
-    |-- empty-favourites.svg
-    |-- empty-search.svg
-    |-- logo.svg
   |- store/
     |-- use-rename-modal.ts
   |- types/
     |-- canvas.ts
-  |- .env.local
-  |- .env.local.example
+  |- .env.example
+  |- .env/.env.local
   |- .eslintrc.json
   |- .gitignore
+  |- bun.lock
   |- components.json
   |- environment.d.ts
   |- liveblocks.config.ts
   |- middleware.ts
   |- next.config.mjs
-  |- package-lock.json
   |- package.json
   |- postcss.config.js
   |- tailwind.config.ts
   |- tsconfig.json
+  |- vercel.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -273,7 +233,7 @@ Useful resources and dependencies that are used in Miro Clone.
 
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
 <!--- DEPENDENCIES_START --->
-- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^4.29.7
+- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^4.31.5
 - [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^1.10.1
 - [@liveblocks/node](https://www.npmjs.com/package/@liveblocks/node): ^1.10.1
 - [@liveblocks/react](https://www.npmjs.com/package/@liveblocks/react): ^1.10.1
@@ -283,25 +243,36 @@ Useful resources and dependencies that are used in Miro Clone.
 - [@radix-ui/react-dropdown-menu](https://www.npmjs.com/package/@radix-ui/react-dropdown-menu): ^2.0.6
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
 - [@radix-ui/react-tooltip](https://www.npmjs.com/package/@radix-ui/react-tooltip): ^1.0.7
+- [@types/node](https://www.npmjs.com/package/@types/node): ^20
+- [@types/react](https://www.npmjs.com/package/@types/react): ^18
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.33
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
 - [convex](https://www.npmjs.com/package/convex): ^1.9.0
 - [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.23
 - [date-fns](https://www.npmjs.com/package/date-fns): ^3.3.1
+- [eslint](https://www.npmjs.com/package/eslint): ^8
+- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 14.1.0
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^0.323.0
 - [nanoid](https://www.npmjs.com/package/nanoid): ^5.0.6
-- [next](https://www.npmjs.com/package/next): 14.1.0
+- [next](https://www.npmjs.com/package/next): 15.5.10
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.2.1
 - [perfect-freehand](https://www.npmjs.com/package/perfect-freehand): ^1.2.2
+- [postcss](https://www.npmjs.com/package/postcss): ^8
 - [query-string](https://www.npmjs.com/package/query-string): ^8.2.0
 - [react](https://www.npmjs.com/package/react): ^18
 - [react-contenteditable](https://www.npmjs.com/package/react-contenteditable): ^3.3.7
 - [react-dom](https://www.npmjs.com/package/react-dom): ^18
 - [sonner](https://www.npmjs.com/package/sonner): ^1.4.0
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.1
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
 - [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
+- [typescript](https://www.npmjs.com/package/typescript): ^5
 - [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^2.14.0
 - [zustand](https://www.npmjs.com/package/zustand): ^4.5.1
+
 <!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
