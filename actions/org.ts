@@ -4,12 +4,13 @@ import { auth, clerkClient } from "@clerk/nextjs/server";
 
 export const addUserToOrg = async () => {
   try {
-    const { userId } = auth();
+    const { userId } = await auth();
 
     if (!userId) throw new Error("Unauthorized!");
 
+    const client = await clerkClient();
     const { organization } =
-      await clerkClient.organizations.createOrganizationMembership({
+      await client.organizations.createOrganizationMembership({
         organizationId: process.env.CLERK_DEFAULT_ORGANIZATION_ID!,
         role: "org:member",
         userId,

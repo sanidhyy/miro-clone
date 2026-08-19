@@ -1,4 +1,4 @@
-import { auth } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
 
 import { BoardList } from "./_components/board-list";
 import { EmptyOrg } from "./_components/empty-org";

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.31.5",
+    "@clerk/nextjs": "^6.15.0",
     "@liveblocks/client": "^1.10.1",
     "@liveblocks/node": "^1.10.1",
     "@liveblocks/react": "^1.10.1",
@@ -22,7 +22,7 @@
     "@vercel/config": "^0.0.33",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "convex": "^1.9.0",
+    "convex": "^1.44.0",
     "convex-helpers": "^0.1.23",
     "date-fns": "^3.3.1",
     "lucide-react": "^0.323.0",
