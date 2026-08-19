@@ -234,7 +234,7 @@ Useful resources and dependencies that are used in Miro Clone.
 
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
 <!--- DEPENDENCIES_START --->
-- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^4.31.5
+- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^6.15.0
 - [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^1.10.1
 - [@liveblocks/node](https://www.npmjs.com/package/@liveblocks/node): ^1.10.1
 - [@liveblocks/react](https://www.npmjs.com/package/@liveblocks/react): ^1.10.1
@@ -251,7 +251,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
-- [convex](https://www.npmjs.com/package/convex): ^1.9.0
+- [convex](https://www.npmjs.com/package/convex): ^1.44.0
 - [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.23
 - [date-fns](https://www.npmjs.com/package/date-fns): ^3.3.1
 - [eslint](https://www.npmjs.com/package/eslint): ^8
