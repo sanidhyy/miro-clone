@@ -44,6 +44,7 @@
 Here is the folder structure of this app.
 
 <!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 miro-clone/
   |- actions/
@@ -106,6 +107,7 @@ miro-clone/
   |- tsconfig.json
   |- vercel.ts
 ```
+
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -202,8 +204,8 @@ LIVEBLOCKS_SECRET_KEY=sk_dev_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 - Save the changes to the `.env.local` file.
 
-9. Install Project Dependencies using `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
-10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
+9. Install Project Dependencies using `npm install --legacy-peer-deps` or `pnpm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `pnpm dev` or `yarn dev`.
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
