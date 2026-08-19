@@ -36,7 +36,7 @@
     "react-contenteditable": "^3.3.7",
     "react-dom": "^18",
     "sonner": "^1.4.0",
-    "tailwind-merge": "^2.2.1",
+    "tailwind-merge": "^3.6.0",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^2.14.0",
     "zustand": "^4.5.1"
