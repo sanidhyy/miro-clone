@@ -18,8 +18,8 @@ importers:
         specifier: ^1.10.1
         version: 1.12.0
       '@liveblocks/react':
-        specifier: ^1.10.1
-        version: 1.12.0(react@18.3.1)
+        specifier: ^3.24.0
+        version: 3.24.0(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)
       '@radix-ui/react-alert-dialog':
         specifier: ^1.0.5
         version: 1.1.23(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -570,16 +570,31 @@ packages:
   '@liveblocks/client@1.12.0':
     resolution: {integrity: sha512-TL4sPbWBlrGF7UXLNx2RYuZi/Z51jXALMFAdaWkYE0Qz7mMwxTVSyjPVR7ZXVuqdSo0CTQ1rpPyZeqcoUDtEoQ==}
 
+  '@liveblocks/client@3.24.0':
+    resolution: {integrity: sha512-nSNqo/CbsOzekH68r1VCoI9OWh/2nPmdpcmG7eEuShM5stRjILBYBr3O5HOnoL6+dlmc0ZKYV4DO8IxYgoT9Yg==}
+
   '@liveblocks/core@1.12.0':
     resolution: {integrity: sha512-cPuVZwSh+EBnJL8DA999h4QDNSlOMFyxHPPHm9qVBf9Cl+NY7/Bg3cyKFiHOki6g7y8dQj8No2tpnAHWdqqalA==}
+
+  '@liveblocks/core@3.24.0':
+    resolution: {integrity: sha512-bJSkMZCUNdP862xkg7xgZgGkn/TCyEQ4mgmvF6uuW0YgGMZr0PoyDVPMevnbt754wXYFnsJGHfxa4IcKHmmN+A==}
+    peerDependencies:
+      '@types/json-schema': ^7
 
   '@liveblocks/node@1.12.0':
     resolution: {integrity: sha512-xq9EusU2ntZ2vkIQT6TrqPWv4N+txMkzn2FgNllJxt+VdJhhvbt1UkAIokywIZSElFC6gt1VUNMRFM+a7nSJUw==}
 
-  '@liveblocks/react@1.12.0':
-    resolution: {integrity: sha512-bxI420FRqUqEAHIyC6jTT40JiMDaum6+7Ag6osme2N0YsshOKZx4/z3uCD3LPdOQAzhaHiv9ZmVYwRFp3z9RfA==}
+  '@liveblocks/react@3.24.0':
+    resolution: {integrity: sha512-xTNqnJDlYILbrErULTqQfEMBCt64Ng2gI071Aw19+9kXheg9RspqsBBB6v/5iFphb9y+iUkUfvwxIohge/JYSA==}
     peerDependencies:
-      react: ^16.14.0 || ^17 || ^18
+      '@types/react': ^18 || ^19
+      '@types/react-dom': ^18 || ^19
+      react: ^18 || ^19 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
 
   '@napi-rs/wasm-runtime@1.2.3':
     resolution: {integrity: sha512-UMduMbqO5s5zF2NkNacMT/yK5Y5QiKvWr2+50bzIIxFDwVJ2h49b+oyjaCGPhJxd2/gC2x39EHv/gHVuu36x2Q==}
@@ -1014,6 +1029,9 @@ packages:
 
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
+
+  '@types/json-schema@7.0.15':
+    resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
@@ -3212,7 +3230,17 @@ snapshots:
     dependencies:
       '@liveblocks/core': 1.12.0
 
+  '@liveblocks/client@3.24.0(@types/json-schema@7.0.15)':
+    dependencies:
+      '@liveblocks/core': 3.24.0(@types/json-schema@7.0.15)
+    transitivePeerDependencies:
+      - '@types/json-schema'
+
   '@liveblocks/core@1.12.0': {}
+
+  '@liveblocks/core@3.24.0(@types/json-schema@7.0.15)':
+    dependencies:
+      '@types/json-schema': 7.0.15
 
   '@liveblocks/node@1.12.0':
     dependencies:
@@ -3223,13 +3251,16 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@liveblocks/react@1.12.0(react@18.3.1)':
+  '@liveblocks/react@3.24.0(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)':
     dependencies:
-      '@liveblocks/client': 1.12.0
-      '@liveblocks/core': 1.12.0
-      nanoid: 3.3.18
+      '@liveblocks/client': 3.24.0(@types/json-schema@7.0.15)
+      '@liveblocks/core': 3.24.0(@types/json-schema@7.0.15)
       react: 18.3.1
-      use-sync-external-store: 1.6.0(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 18.3.31
+      '@types/react-dom': 18.3.7(@types/react@18.3.31)
+    transitivePeerDependencies:
+      - '@types/json-schema'
 
   '@napi-rs/wasm-runtime@1.2.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
     dependencies:
@@ -3622,6 +3653,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
 
@@ -5639,6 +5672,7 @@ snapshots:
   use-sync-external-store@1.6.0(react@18.3.1):
     dependencies:
       react: 18.3.1
+    optional: true
 
   usehooks-ts@2.16.0(react@18.3.1):
     dependencies:
