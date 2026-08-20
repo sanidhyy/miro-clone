@@ -268,7 +268,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [react-contenteditable](https://www.npmjs.com/package/react-contenteditable): ^3.3.7
 - [react-dom](https://www.npmjs.com/package/react-dom): ^18
 - [sonner](https://www.npmjs.com/package/sonner): ^1.4.0
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.1
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
 - [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
 - [typescript](https://www.npmjs.com/package/typescript): ^5
