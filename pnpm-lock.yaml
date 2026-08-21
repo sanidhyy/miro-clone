@@ -12,14 +12,14 @@ importers:
         specifier: ^7.7.6
         version: 7.7.6(next@15.5.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@liveblocks/client':
-        specifier: ^1.10.1
-        version: 1.12.0
+        specifier: ^3.24.0
+        version: 3.24.0(@types/json-schema@7.0.15)
       '@liveblocks/node':
-        specifier: ^1.10.1
-        version: 1.12.0
+        specifier: ^3.24.0
+        version: 3.24.0(@types/json-schema@7.0.15)
       '@liveblocks/react':
-        specifier: ^1.10.1
-        version: 1.12.0(react@18.3.1)
+        specifier: ^3.24.0
+        version: 3.24.0(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)
       '@radix-ui/react-alert-dialog':
         specifier: ^1.0.5
         version: 1.1.23(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -567,19 +567,28 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@liveblocks/client@1.12.0':
-    resolution: {integrity: sha512-TL4sPbWBlrGF7UXLNx2RYuZi/Z51jXALMFAdaWkYE0Qz7mMwxTVSyjPVR7ZXVuqdSo0CTQ1rpPyZeqcoUDtEoQ==}
+  '@liveblocks/client@3.24.0':
+    resolution: {integrity: sha512-nSNqo/CbsOzekH68r1VCoI9OWh/2nPmdpcmG7eEuShM5stRjILBYBr3O5HOnoL6+dlmc0ZKYV4DO8IxYgoT9Yg==}
 
-  '@liveblocks/core@1.12.0':
-    resolution: {integrity: sha512-cPuVZwSh+EBnJL8DA999h4QDNSlOMFyxHPPHm9qVBf9Cl+NY7/Bg3cyKFiHOki6g7y8dQj8No2tpnAHWdqqalA==}
-
-  '@liveblocks/node@1.12.0':
-    resolution: {integrity: sha512-xq9EusU2ntZ2vkIQT6TrqPWv4N+txMkzn2FgNllJxt+VdJhhvbt1UkAIokywIZSElFC6gt1VUNMRFM+a7nSJUw==}
-
-  '@liveblocks/react@1.12.0':
-    resolution: {integrity: sha512-bxI420FRqUqEAHIyC6jTT40JiMDaum6+7Ag6osme2N0YsshOKZx4/z3uCD3LPdOQAzhaHiv9ZmVYwRFp3z9RfA==}
+  '@liveblocks/core@3.24.0':
+    resolution: {integrity: sha512-bJSkMZCUNdP862xkg7xgZgGkn/TCyEQ4mgmvF6uuW0YgGMZr0PoyDVPMevnbt754wXYFnsJGHfxa4IcKHmmN+A==}
     peerDependencies:
-      react: ^16.14.0 || ^17 || ^18
+      '@types/json-schema': ^7
+
+  '@liveblocks/node@3.24.0':
+    resolution: {integrity: sha512-d24Ox+G6Q6SmU3hxgFGmmlZaRvisBSgZSUKQQnMI3GSorFMOdecHzyBcngU8pBMdShN1V6dKTeiE7FneO3H1EQ==}
+
+  '@liveblocks/react@3.24.0':
+    resolution: {integrity: sha512-xTNqnJDlYILbrErULTqQfEMBCt64Ng2gI071Aw19+9kXheg9RspqsBBB6v/5iFphb9y+iUkUfvwxIohge/JYSA==}
+    peerDependencies:
+      '@types/react': ^18 || ^19
+      '@types/react-dom': ^18 || ^19
+      react: ^18 || ^19 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
 
   '@napi-rs/wasm-runtime@1.2.3':
     resolution: {integrity: sha512-UMduMbqO5s5zF2NkNacMT/yK5Y5QiKvWr2+50bzIIxFDwVJ2h49b+oyjaCGPhJxd2/gC2x39EHv/gHVuu36x2Q==}
@@ -1014,6 +1023,9 @@ packages:
 
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
+
+  '@types/json-schema@7.0.15':
+    resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
@@ -2095,6 +2107,11 @@ packages:
     resolution: {integrity: sha512-rTXZFILl2Y4d1SG9p1Mdcf17AcPvPvpc/egFIzUrp7IUy60MUQo3Oi1mu8LGYXUVwuRZYsSMt3csHRW5mAovJg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
+
+  marked@15.0.12:
+    resolution: {integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==}
+    engines: {node: '>= 18'}
+    hasBin: true
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -3208,28 +3225,37 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@liveblocks/client@1.12.0':
+  '@liveblocks/client@3.24.0(@types/json-schema@7.0.15)':
     dependencies:
-      '@liveblocks/core': 1.12.0
+      '@liveblocks/core': 3.24.0(@types/json-schema@7.0.15)
+    transitivePeerDependencies:
+      - '@types/json-schema'
 
-  '@liveblocks/core@1.12.0': {}
-
-  '@liveblocks/node@1.12.0':
+  '@liveblocks/core@3.24.0(@types/json-schema@7.0.15)':
     dependencies:
-      '@liveblocks/core': 1.12.0
+      '@types/json-schema': 7.0.15
+
+  '@liveblocks/node@3.24.0(@types/json-schema@7.0.15)':
+    dependencies:
+      '@liveblocks/core': 3.24.0(@types/json-schema@7.0.15)
       '@stablelib/base64': 1.0.1
       fast-sha256: 1.3.0
+      marked: 15.0.12
       node-fetch: 2.7.0
     transitivePeerDependencies:
+      - '@types/json-schema'
       - encoding
 
-  '@liveblocks/react@1.12.0(react@18.3.1)':
+  '@liveblocks/react@3.24.0(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)':
     dependencies:
-      '@liveblocks/client': 1.12.0
-      '@liveblocks/core': 1.12.0
-      nanoid: 3.3.18
+      '@liveblocks/client': 3.24.0(@types/json-schema@7.0.15)
+      '@liveblocks/core': 3.24.0(@types/json-schema@7.0.15)
       react: 18.3.1
-      use-sync-external-store: 1.6.0(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 18.3.31
+      '@types/react-dom': 18.3.7(@types/react@18.3.31)
+    transitivePeerDependencies:
+      - '@types/json-schema'
 
   '@napi-rs/wasm-runtime@1.2.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
     dependencies:
@@ -3622,6 +3648,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
 
@@ -4851,6 +4879,8 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  marked@15.0.12: {}
+
   math-intrinsics@1.1.0: {}
 
   merge2@1.4.1: {}
@@ -5639,6 +5669,7 @@ snapshots:
   use-sync-external-store@1.6.0(react@18.3.1):
     dependencies:
       react: 18.3.1
+    optional: true
 
   usehooks-ts@2.16.0(react@18.3.1):
     dependencies:

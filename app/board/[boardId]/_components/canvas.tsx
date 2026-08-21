@@ -137,7 +137,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
 
   const updateSelectionNet = useMutation(
     ({ storage, setMyPresence }, current: Point, origin: Point) => {
-      const layers = storage.get("layers").toImmutable();
+      const layers = storage.get("layers").toJSON();
       setCanvasState({
         mode: CanvasMode.SelectionNet,
         origin,
