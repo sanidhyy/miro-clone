@@ -72,7 +72,7 @@ export function resizeBounds(bounds: XYWH, corner: Side, point: Point): XYWH {
 
 export function findIntersectingLayersWithRectangle(
   layerIds: readonly string[],
-  layers: ReadonlyMap<string, Layer>,
+  layers: { readonly [id: string]: Layer | undefined },
   a: Point,
   b: Point,
 ) {
@@ -86,7 +86,7 @@ export function findIntersectingLayersWithRectangle(
   const ids = [];
 
   for (const layerId of layerIds) {
-    const layer = layers.get(layerId);
+    const layer = layers[layerId];
 
     if (layer == null) continue;
 
