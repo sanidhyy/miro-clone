@@ -31,7 +31,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 This project and everyone participating in it is governed by the
 [Miro Clone Code of Conduct](https://github.com/sanidhyy/miro-cloneblob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
-to .
+to <sanidhyyy@gmail.com>.
 
 
 ## I Have a Question
