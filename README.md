@@ -267,7 +267,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 14.1.0
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.34.0
 - [nanoid](https://www.npmjs.com/package/nanoid): ^6.0.1
-- [next](https://www.npmjs.com/package/next): 15.5.21
+- [next](https://www.npmjs.com/package/next): 16.3.4
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [perfect-freehand](https://www.npmjs.com/package/perfect-freehand): ^1.2.2
 - [postcss](https://www.npmjs.com/package/postcss): ^8
