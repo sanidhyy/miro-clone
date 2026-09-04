@@ -280,7 +280,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
 - [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
 - [typescript](https://www.npmjs.com/package/typescript): ^5
-- [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^2.14.0
+- [usehooks-ts](https://www.npmjs.com/package/usehooks-ts): ^3.1.1
 - [zustand](https://www.npmjs.com/package/zustand): ^5.0.15
 
 <!--- DEPENDENCIES_END --->
