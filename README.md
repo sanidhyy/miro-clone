@@ -260,7 +260,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
-- [convex](https://www.npmjs.com/package/convex): ^1.44.0
+- [convex](https://www.npmjs.com/package/convex): ^1.45.0
 - [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.23
 - [date-fns](https://www.npmjs.com/package/date-fns): ^3.3.1
 - [eslint](https://www.npmjs.com/package/eslint): ^8
