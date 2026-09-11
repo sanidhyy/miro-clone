@@ -12,14 +12,14 @@ importers:
         specifier: ^7.9.1
         version: 7.9.1(next@16.3.4(@types/node@26.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@liveblocks/client':
-        specifier: ^3.24.0
-        version: 3.24.0(@types/json-schema@7.0.15)
+        specifier: ^3.24.1
+        version: 3.24.1(@types/json-schema@7.0.15)
       '@liveblocks/node':
         specifier: ^3.24.1
         version: 3.24.1(@types/json-schema@7.0.15)
       '@liveblocks/react':
-        specifier: ^3.24.0
-        version: 3.24.0(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)
+        specifier: ^3.24.1
+        version: 3.24.1(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)
       '@radix-ui/react-alert-dialog':
         specifier: ^1.0.5
         version: 1.1.23(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -572,13 +572,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@liveblocks/client@3.24.0':
-    resolution: {integrity: sha512-nSNqo/CbsOzekH68r1VCoI9OWh/2nPmdpcmG7eEuShM5stRjILBYBr3O5HOnoL6+dlmc0ZKYV4DO8IxYgoT9Yg==}
-
-  '@liveblocks/core@3.24.0':
-    resolution: {integrity: sha512-bJSkMZCUNdP862xkg7xgZgGkn/TCyEQ4mgmvF6uuW0YgGMZr0PoyDVPMevnbt754wXYFnsJGHfxa4IcKHmmN+A==}
-    peerDependencies:
-      '@types/json-schema': ^7
+  '@liveblocks/client@3.24.1':
+    resolution: {integrity: sha512-7q+4hE7Kl/ogARd/y73ja7Es3yUReDDK4MBsvp/DXMmF0LHlRe86vxGZUG0SNqytYYvzeTnqwNHwfrOEtMvftQ==}
 
   '@liveblocks/core@3.24.1':
     resolution: {integrity: sha512-Jyzm+vZVX+ONEHgqICXPVS82yQ/CEflh44KtwuiPzT5L5vktAGUUH1tz+2tvP1xiJZaf5DgdAoR40VMBp2cW1Q==}
@@ -588,8 +583,8 @@ packages:
   '@liveblocks/node@3.24.1':
     resolution: {integrity: sha512-Tc8ynd/NpVjm+cf259HuBAwr8mvQU3MbD2QayTRO6GBQoMjfyijRkNHqCop0H8WaHE4Cj70waCRsONvLDbjfjg==}
 
-  '@liveblocks/react@3.24.0':
-    resolution: {integrity: sha512-xTNqnJDlYILbrErULTqQfEMBCt64Ng2gI071Aw19+9kXheg9RspqsBBB6v/5iFphb9y+iUkUfvwxIohge/JYSA==}
+  '@liveblocks/react@3.24.1':
+    resolution: {integrity: sha512-m/bcqw+/vPfNxTRosgs0iqXBcVCK0ZdkMIk0ojGQYYZDUFy+NBCmUVohSRjmA7AuxRlve+jZvcsFi88pbCXTwg==}
     peerDependencies:
       '@types/react': ^18 || ^19
       '@types/react-dom': ^18 || ^19
@@ -3203,15 +3198,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@liveblocks/client@3.24.0(@types/json-schema@7.0.15)':
+  '@liveblocks/client@3.24.1(@types/json-schema@7.0.15)':
     dependencies:
-      '@liveblocks/core': 3.24.0(@types/json-schema@7.0.15)
+      '@liveblocks/core': 3.24.1(@types/json-schema@7.0.15)
     transitivePeerDependencies:
       - '@types/json-schema'
-
-  '@liveblocks/core@3.24.0(@types/json-schema@7.0.15)':
-    dependencies:
-      '@types/json-schema': 7.0.15
 
   '@liveblocks/core@3.24.1(@types/json-schema@7.0.15)':
     dependencies:
@@ -3228,10 +3219,10 @@ snapshots:
       - '@types/json-schema'
       - encoding
 
-  '@liveblocks/react@3.24.0(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)':
+  '@liveblocks/react@3.24.1(@types/json-schema@7.0.15)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react@18.3.1)':
     dependencies:
-      '@liveblocks/client': 3.24.0(@types/json-schema@7.0.15)
-      '@liveblocks/core': 3.24.0(@types/json-schema@7.0.15)
+      '@liveblocks/client': 3.24.1(@types/json-schema@7.0.15)
+      '@liveblocks/core': 3.24.1(@types/json-schema@7.0.15)
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.31
