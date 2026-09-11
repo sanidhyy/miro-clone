@@ -39,8 +39,8 @@ importers:
         specifier: ^1.0.7
         version: 1.2.16(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@vercel/config':
-        specifier: ^0.0.33
-        version: 0.0.33
+        specifier: ^0.7.0
+        version: 0.7.0
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.1
@@ -1232,12 +1232,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@vercel/config@0.0.33':
-    resolution: {integrity: sha512-TkYY/kKzAsYlKTmz/uScyEB2vDV1P9HzBVJRSJ5RwU7XNPyYksYNnPTMmytZZfv/poI+xs6KO5fyYxBErH6rtg==}
+  '@vercel/config@0.7.0':
+    resolution: {integrity: sha512-aWwF0zTnkfgn0t9/7inwyEjyY781thrgFe0PTaVwdyy0vmxZB+FF44EYIKKmUyIF6hv7HqgOSU7T0KZRnQZPWA==}
     hasBin: true
 
-  '@vercel/routing-utils@5.3.3':
-    resolution: {integrity: sha512-KYm2sLNUD48gDScv8ob4ejc3Gww2jcJyW80hTdYlenAPz/5BQar1Gyh38xrUuZ532TUwSb5mV1uRbAuiykq0EQ==}
+  '@vercel/routing-utils@6.5.0':
+    resolution: {integrity: sha512-2PXgATJyJYEaIuDEhljZ+sfOfJEsBl6OEzD+jHhy6NAb0k2mHdbTjcK3zTBNnYq0nebrXpq5ZGiwOxBFoUwB3A==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -3810,13 +3810,13 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vercel/config@0.0.33':
+  '@vercel/config@0.7.0':
     dependencies:
-      '@vercel/routing-utils': 5.3.3
+      '@vercel/routing-utils': 6.5.0
       pretty-cache-header: 1.0.0
       zod: 3.25.76
 
-  '@vercel/routing-utils@5.3.3':
+  '@vercel/routing-utils@6.5.0':
     dependencies:
       path-to-regexp: 6.1.0
       path-to-regexp-updated: path-to-regexp@6.3.0
