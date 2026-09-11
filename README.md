@@ -262,7 +262,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
 - [convex](https://www.npmjs.com/package/convex): ^1.45.0
 - [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.23
-- [date-fns](https://www.npmjs.com/package/date-fns): ^3.3.1
+- [date-fns](https://www.npmjs.com/package/date-fns): ^4.4.0
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.25
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.34.0
