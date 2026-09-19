@@ -261,7 +261,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
 - [convex](https://www.npmjs.com/package/convex): ^1.45.0
-- [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.23
+- [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.124
 - [date-fns](https://www.npmjs.com/package/date-fns): ^4.4.0
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.25
@@ -271,7 +271,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [perfect-freehand](https://www.npmjs.com/package/perfect-freehand): ^1.2.2
 - [postcss](https://www.npmjs.com/package/postcss): ^8
-- [query-string](https://www.npmjs.com/package/query-string): ^9.5.0
+- [query-string](https://www.npmjs.com/package/query-string): ^9.5.1
 - [react](https://www.npmjs.com/package/react): ^18
 - [react-contenteditable](https://www.npmjs.com/package/react-contenteditable): ^3.3.7
 - [react-dom](https://www.npmjs.com/package/react-dom): ^18
