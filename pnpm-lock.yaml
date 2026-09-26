@@ -12,8 +12,8 @@ importers:
         specifier: ^7.9.1
         version: 7.9.1(next@16.3.5(@types/node@26.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@liveblocks/client':
-        specifier: ^3.24.1
-        version: 3.24.1(@types/json-schema@7.0.15)
+        specifier: ^3.24.2
+        version: 3.24.2(@types/json-schema@7.0.15)
       '@liveblocks/node':
         specifier: ^3.24.2
         version: 3.24.2(@types/json-schema@7.0.15)
@@ -573,16 +573,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@liveblocks/client@3.24.1':
-    resolution: {integrity: sha512-7q+4hE7Kl/ogARd/y73ja7Es3yUReDDK4MBsvp/DXMmF0LHlRe86vxGZUG0SNqytYYvzeTnqwNHwfrOEtMvftQ==}
-
   '@liveblocks/client@3.24.2':
     resolution: {integrity: sha512-sTwdfToT6e1t4x2pv02nZuvKHoTU4L4hwOSyxVPE8i9D1gsk89uW2Rpp8mPcKuBSOroZgiEiSCl2s0AQVaPwSQ==}
-
-  '@liveblocks/core@3.24.1':
-    resolution: {integrity: sha512-Jyzm+vZVX+ONEHgqICXPVS82yQ/CEflh44KtwuiPzT5L5vktAGUUH1tz+2tvP1xiJZaf5DgdAoR40VMBp2cW1Q==}
-    peerDependencies:
-      '@types/json-schema': ^7
 
   '@liveblocks/core@3.24.2':
     resolution: {integrity: sha512-xFtE9RojMLvzIqALxUIvn7wej7EGP+iCU7N8BxkXTj8cMrLHNEnbIYrJPeW/7dLKa2dYyS5WA/Yr3Vif9ZkRow==}
@@ -3212,21 +3204,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@liveblocks/client@3.24.1(@types/json-schema@7.0.15)':
-    dependencies:
-      '@liveblocks/core': 3.24.1(@types/json-schema@7.0.15)
-    transitivePeerDependencies:
-      - '@types/json-schema'
-
   '@liveblocks/client@3.24.2(@types/json-schema@7.0.15)':
     dependencies:
       '@liveblocks/core': 3.24.2(@types/json-schema@7.0.15)
     transitivePeerDependencies:
       - '@types/json-schema'
-
-  '@liveblocks/core@3.24.1(@types/json-schema@7.0.15)':
-    dependencies:
-      '@types/json-schema': 7.0.15
 
   '@liveblocks/core@3.24.2(@types/json-schema@7.0.15)':
     dependencies:
