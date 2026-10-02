@@ -254,7 +254,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
 - [@radix-ui/react-tooltip](https://www.npmjs.com/package/@radix-ui/react-tooltip): ^1.0.7
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26
-- [@types/react](https://www.npmjs.com/package/@types/react): ^18
+- [@types/react](https://www.npmjs.com/package/@types/react): ^19
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.7.1
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
@@ -272,9 +272,9 @@ Useful resources and dependencies that are used in Miro Clone.
 - [perfect-freehand](https://www.npmjs.com/package/perfect-freehand): ^1.2.2
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [query-string](https://www.npmjs.com/package/query-string): ^9.5.1
-- [react](https://www.npmjs.com/package/react): ^18
+- [react](https://www.npmjs.com/package/react): ^19
 - [react-contenteditable](https://www.npmjs.com/package/react-contenteditable): ^3.3.7
-- [react-dom](https://www.npmjs.com/package/react-dom): ^18
+- [react-dom](https://www.npmjs.com/package/react-dom): ^19
 - [sonner](https://www.npmjs.com/package/sonner): ^2.0.8
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.7.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
