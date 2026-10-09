@@ -265,7 +265,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [date-fns](https://www.npmjs.com/package/date-fns): ^4.4.0
 - [eslint](https://www.npmjs.com/package/eslint): ^8
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.27
-- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.47.0
+- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.52.0
 - [nanoid](https://www.npmjs.com/package/nanoid): ^6.0.1
 - [next](https://www.npmjs.com/package/next): 16.3.6
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
