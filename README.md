@@ -255,7 +255,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [@radix-ui/react-tooltip](https://www.npmjs.com/package/@radix-ui/react-tooltip): ^1.0.7
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.7.2
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
