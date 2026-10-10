@@ -244,9 +244,9 @@ Useful resources and dependencies that are used in Miro Clone.
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
 <!--- DEPENDENCIES_START --->
 - [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^7.9.11
-- [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^3.24.2
-- [@liveblocks/node](https://www.npmjs.com/package/@liveblocks/node): ^3.24.2
-- [@liveblocks/react](https://www.npmjs.com/package/@liveblocks/react): ^3.24.2
+- [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^3.24.3
+- [@liveblocks/node](https://www.npmjs.com/package/@liveblocks/node): ^3.24.3
+- [@liveblocks/react](https://www.npmjs.com/package/@liveblocks/react): ^3.24.3
 - [@radix-ui/react-alert-dialog](https://www.npmjs.com/package/@radix-ui/react-alert-dialog): ^1.1.24
 - [@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar): ^1.0.4
 - [@radix-ui/react-dialog](https://www.npmjs.com/package/@radix-ui/react-dialog): ^1.0.5
