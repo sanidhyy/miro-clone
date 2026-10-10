@@ -12,8 +12,8 @@ importers:
         specifier: ^7.9.11
         version: 7.9.11(next@16.3.8(@types/node@26.6.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@liveblocks/client':
-        specifier: ^3.24.2
-        version: 3.24.2(@types/json-schema@7.0.15)
+        specifier: ^3.24.3
+        version: 3.24.3(@types/json-schema@7.0.15)
       '@liveblocks/node':
         specifier: ^3.24.2
         version: 3.24.2(@types/json-schema@7.0.15)
@@ -576,8 +576,16 @@ packages:
   '@liveblocks/client@3.24.2':
     resolution: {integrity: sha512-sTwdfToT6e1t4x2pv02nZuvKHoTU4L4hwOSyxVPE8i9D1gsk89uW2Rpp8mPcKuBSOroZgiEiSCl2s0AQVaPwSQ==}
 
+  '@liveblocks/client@3.24.3':
+    resolution: {integrity: sha512-sNDLR+QJqw9eok+ZrN1Lp9X2MNgOpqqQDDoxLIHseRj4Ef9KRALVdyJs1cEfxM1XoxPwIYBbaPziVZsEDOMxPg==}
+
   '@liveblocks/core@3.24.2':
     resolution: {integrity: sha512-xFtE9RojMLvzIqALxUIvn7wej7EGP+iCU7N8BxkXTj8cMrLHNEnbIYrJPeW/7dLKa2dYyS5WA/Yr3Vif9ZkRow==}
+    peerDependencies:
+      '@types/json-schema': ^7
+
+  '@liveblocks/core@3.24.3':
+    resolution: {integrity: sha512-ahpFifWALK28y2cs/NteGzwPPxBAgFYLk45cW0VBuwiwYPBKbdOjzXHk8EpT3KQ6XwwB+iSCXCZXuHNuGe7f0Q==}
     peerDependencies:
       '@types/json-schema': ^7
 
@@ -3309,7 +3317,17 @@ snapshots:
     transitivePeerDependencies:
       - '@types/json-schema'
 
+  '@liveblocks/client@3.24.3(@types/json-schema@7.0.15)':
+    dependencies:
+      '@liveblocks/core': 3.24.3(@types/json-schema@7.0.15)
+    transitivePeerDependencies:
+      - '@types/json-schema'
+
   '@liveblocks/core@3.24.2(@types/json-schema@7.0.15)':
+    dependencies:
+      '@types/json-schema': 7.0.15
+
+  '@liveblocks/core@3.24.3(@types/json-schema@7.0.15)':
     dependencies:
       '@types/json-schema': 7.0.15
 
