@@ -243,7 +243,7 @@ Useful resources and dependencies that are used in Miro Clone.
 
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
 <!--- DEPENDENCIES_START --->
-- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^7.9.11
+- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^7.9.14
 - [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^3.24.3
 - [@liveblocks/node](https://www.npmjs.com/package/@liveblocks/node): ^3.24.3
 - [@liveblocks/react](https://www.npmjs.com/package/@liveblocks/react): ^3.24.3
