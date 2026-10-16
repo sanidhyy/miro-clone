@@ -251,7 +251,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar): ^1.3.1
 - [@radix-ui/react-dialog](https://www.npmjs.com/package/@radix-ui/react-dialog): ^1.0.5
 - [@radix-ui/react-dropdown-menu](https://www.npmjs.com/package/@radix-ui/react-dropdown-menu): ^2.0.6
-- [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.0.2
+- [@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot): ^1.5.0
 - [@radix-ui/react-tooltip](https://www.npmjs.com/package/@radix-ui/react-tooltip): ^1.0.7
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19
