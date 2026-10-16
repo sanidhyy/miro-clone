@@ -257,7 +257,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.7.2
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.0.1
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.6.1
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
 - [convex](https://www.npmjs.com/package/convex): ^1.46.0
