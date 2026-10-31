@@ -271,7 +271,7 @@ Useful resources and dependencies that are used in Miro Clone.
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
 - [perfect-freehand](https://www.npmjs.com/package/perfect-freehand): ^1.2.2
 - [postcss](https://www.npmjs.com/package/postcss): ^8
-- [query-string](https://www.npmjs.com/package/query-string): ^9.5.1
+- [query-string](https://www.npmjs.com/package/query-string): ^10.0.0
 - [react](https://www.npmjs.com/package/react): ^19
 - [react-contenteditable](https://www.npmjs.com/package/react-contenteditable): ^3.3.7
 - [react-dom](https://www.npmjs.com/package/react-dom): ^19
