@@ -22,7 +22,7 @@
     "@vercel/config": "^0.14.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "convex": "^1.47.0",
+    "convex": "^1.49.0",
     "convex-helpers": "^0.1.133",
     "date-fns": "^4.4.0",
     "lucide-react": "^1.60.0",
