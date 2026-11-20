@@ -242,10 +242,10 @@ Useful resources and dependencies that are used in Miro Clone.
 
 - Thanks to CodeWithAntonio: https://codewithantonio.com/
 <!--- DEPENDENCIES_START --->
-- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^7.10.0
-- [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^3.24.3
+- [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^7.10.4
+- [@liveblocks/client](https://www.npmjs.com/package/@liveblocks/client): ^3.25.1
 - [@liveblocks/node](https://www.npmjs.com/package/@liveblocks/node): ^3.25.1
-- [@liveblocks/react](https://www.npmjs.com/package/@liveblocks/react): ^3.24.3
+- [@liveblocks/react](https://www.npmjs.com/package/@liveblocks/react): ^3.25.1
 - [@radix-ui/react-alert-dialog](https://www.npmjs.com/package/@radix-ui/react-alert-dialog): ^1.2.1
 - [@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar): ^1.3.1
 - [@radix-ui/react-dialog](https://www.npmjs.com/package/@radix-ui/react-dialog): ^1.0.5
@@ -255,16 +255,16 @@ Useful resources and dependencies that are used in Miro Clone.
 - [@types/node](https://www.npmjs.com/package/@types/node): ^26
 - [@types/react](https://www.npmjs.com/package/@types/react): ^19
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19
-- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.14.1
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.15.0
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.6.2
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
-- [convex](https://www.npmjs.com/package/convex): ^1.49.0
-- [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.134
+- [convex](https://www.npmjs.com/package/convex): ^1.51.0
+- [convex-helpers](https://www.npmjs.com/package/convex-helpers): ^0.1.136
 - [date-fns](https://www.npmjs.com/package/date-fns): ^4.4.0
-- [eslint](https://www.npmjs.com/package/eslint): ^8
+- [eslint](https://www.npmjs.com/package/eslint): ^9.39.5
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.5.29
-- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.73.0
+- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.76.0
 - [nanoid](https://www.npmjs.com/package/nanoid): ^6.0.1
 - [next](https://www.npmjs.com/package/next): 16.4.6
 - [next-themes](https://www.npmjs.com/package/next-themes): ^0.4.6
