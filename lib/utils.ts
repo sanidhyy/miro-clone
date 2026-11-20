@@ -8,7 +8,6 @@ import {
   type XYWH,
   Side,
   type Point,
-  type Layer,
   type PathLayer,
   LayerType,
 } from "@/types/canvas";
@@ -72,7 +71,7 @@ export function resizeBounds(bounds: XYWH, corner: Side, point: Point): XYWH {
 
 export function findIntersectingLayersWithRectangle(
   layerIds: readonly string[],
-  layers: { readonly [id: string]: Layer | undefined },
+  layers: { readonly [id: string]: XYWH | undefined },
   a: Point,
   b: Point,
 ) {

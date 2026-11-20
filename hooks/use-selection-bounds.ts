@@ -1,9 +1,9 @@
 import { shallow } from "@liveblocks/react";
 
 import { useStorage, useSelf } from "@/liveblocks.config";
-import type { Layer, XYWH } from "@/types/canvas";
+import type { XYWH } from "@/types/canvas";
 
-const boundingBox = (layers: Layer[]): XYWH | null => {
+const boundingBox = (layers: readonly XYWH[]): XYWH | null => {
   const first = layers[0];
 
   if (!first) return null;

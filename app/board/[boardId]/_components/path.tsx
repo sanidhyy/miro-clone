@@ -5,7 +5,7 @@ import React from "react";
 type PathProps = {
   x: number;
   y: number;
-  points: number[][];
+  points: readonly (readonly number[])[];
   fill: string;
   onPointerDown?: (e: React.PointerEvent) => void;
   stroke?: string;
@@ -24,7 +24,7 @@ export const Path = ({
       className="drop-shadow-md"
       onPointerDown={onPointerDown}
       d={getSvgPathFromStroke(
-        getStroke(points, {
+        getStroke(points.map((point) => [...point]), {
           size: 16,
           thinning: 0.5,
           smoothing: 0.5,
