@@ -97,12 +97,12 @@ miro-clone/
   |- components.json
   |- environment.d.ts
   |- liveblocks.config.ts
-  |- middleware.ts
   |- next.config.mjs
   |- package.json
   |- pnpm-lock.yaml
   |- pnpm-workspace.yaml
   |- postcss.config.js
+  |- proxy.ts
   |- tailwind.config.ts
   |- tsconfig.json
   |- vercel.ts
